@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice Haystack</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 36px;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: #555;
+    }
+    .button {
+      display: inline-block;
+      margin: 10px 10px 10px 0;
+      padding: 12px 18px;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .button.secondary {
+      background: #555;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 16px;
+      overflow-x: auto;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Invoice Haystack</h1>
+
+  <p class="subtitle">
+    Benchmarking Document Retrieval and Visual Question Answering Under Strong Visual Homogeneity
+  </p>
+
+  <p>
+    Invoice Haystack is a benchmark for evaluating retrieval and visual question answering
+    over large collections of visually similar invoice documents. It targets enterprise-style
+    document repositories where invoices share similar templates but differ in fine-grained
+    semantic information.
+  </p>
+
+  <a class="button" href="https://github.com/YOUR_USERNAME/invoice-haystack">View Code</a>
+  <a class="button secondary" href="https://forms.gle/YOUR_FORM_ID">Request Dataset Access</a>
+
+  <h2>Benchmark</h2>
+  <ul>
+    <li>1,500 anonymized invoice images</li>
+    <li>200 validated question-answer pairs</li>
+    <li>Corpus scales: 500, 1,000, and 1,500 documents</li>
+    <li>Designed for strong visual homogeneity</li>
+  </ul>
+
+  <h2>Method: VL-RAG</h2>
+  <p>
+    VL-RAG combines text and visual retrieval streams. The text stream uses OCR and BGE-Large
+    embeddings, while the vision stream uses SigLIP and OpenCLIP. Candidate documents are
+    ranked using average score fusion and refined using a VLM-based verification filter.
+  </p>
+
+  <h2>Installation</h2>
+  <pre><code>git clone https://github.com/YOUR_USERNAME/invoice-haystack.git
+cd invoice-haystack
+pip install -r requirements.txt</code></pre>
+
+  <h2>Dataset Access</h2>
+  <p>
+    The dataset will be released after acceptance. For early access or collaboration requests,
+    please submit the request form below.
+  </p>
+
+  <p>
+    <a class="button secondary" href="https://forms.gle/YOUR_FORM_ID">Request Access</a>
+  </p>
+
+  <h2>Citation</h2>
+  <pre><code>@inproceedings{invoicehaystack2026,
+  title={Invoice Haystack: Benchmarking Document Retrieval and Visual Question Answering Under Strong Visual Homogeneity},
+  author={Anonymous},
+  booktitle={ECCV},
+  year={2026}
+}</code></pre>
+</body>
+</html>
