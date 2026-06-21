@@ -27,20 +27,4 @@ We also release VL-RAG, a hybrid retrieval-augmented generation framework that c
 
 The retrieval pipeline ranks candidate invoices using both visual and textual signals, then applies a VLM filter to verify whether each candidate can answer the query.
 
-## Repository Structure
 
-```text
-invoice-haystack/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── src/
-│   ├── retrieval/
-│   ├── vlrag/
-│   └── evaluation/
-├── examples/
-├── assets/
-├── data/
-│   └── README.md
-└── docs/
-    └── index.html
