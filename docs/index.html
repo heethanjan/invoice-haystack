@@ -1,9 +1,12 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Invoice Haystack</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,18 +15,35 @@
       padding: 0 20px;
       line-height: 1.6;
       color: #222;
+      background: #ffffff;
     }
+
     h1 {
-      font-size: 42px;
+      font-size: 44px;
       margin-bottom: 10px;
     }
+
     h2 {
-      margin-top: 36px;
+      margin-top: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
     }
+
     .subtitle {
       font-size: 20px;
       color: #555;
+      margin-bottom: 24px;
     }
+
+    .hero-image {
+      width: 100%;
+      max-width: 960px;
+      border-radius: 12px;
+      margin: 24px 0;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
     .button {
       display: inline-block;
       margin: 10px 10px 10px 0;
@@ -32,29 +52,62 @@
       color: white;
       text-decoration: none;
       border-radius: 6px;
+      font-weight: bold;
     }
+
+    .button:hover {
+      background: #333;
+    }
+
     .button.secondary {
       background: #555;
     }
+
+    .button.secondary:hover {
+      background: #777;
+    }
+
     code {
       background: #f4f4f4;
       padding: 2px 5px;
       border-radius: 4px;
     }
+
     pre {
       background: #f4f4f4;
       padding: 16px;
       overflow-x: auto;
       border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
   <h1>Invoice Haystack</h1>
 
   <p class="subtitle">
     Benchmarking Document Retrieval and Visual Question Answering Under Strong Visual Homogeneity
   </p>
+
+  <!-- Introductory image -->
+  <img
+    class="hero-image"
+    src="assets/intro.png"
+    alt="Invoice Haystack benchmark overview"
+  />
 
   <p>
     Invoice Haystack is a benchmark for evaluating retrieval and visual question answering
@@ -63,18 +116,34 @@
     semantic information.
   </p>
 
-  <a class="button" href="https://github.com/heethanjan/invoice-haystack">View Code</a>
-  <a class="button secondary" href="https://drive.google.com/file/d/17PvpbvDzoGcYAvSZGrY31OmrMs-LijZ7/view?usp=sharing">Request Dataset Access</a>
+  <p>
+    The benchmark is designed to test whether modern document AI systems can retrieve the
+    correct invoice and answer questions accurately when many candidate documents look almost
+    identical.
+  </p>
+
+  <p>
+    <a class="button" href="https://github.com/heethanjan/invoice-haystack">
+      View Code
+    </a>
+
+    <a class="button secondary" href="https://drive.google.com/file/d/17PvpbvDzoGcYAvSZGrY31OmrMs-LijZ7/view?usp=sharing">
+      Request Dataset Access
+    </a>
+  </p>
 
   <h2>Benchmark</h2>
+
   <ul>
     <li>1,500 anonymized invoice images</li>
     <li>200 validated question-answer pairs</li>
     <li>Corpus scales: 500, 1,000, and 1,500 documents</li>
     <li>Designed for strong visual homogeneity</li>
+    <li>Focused on document retrieval and visual question answering</li>
   </ul>
 
   <h2>Method: VL-RAG</h2>
+
   <p>
     VL-RAG combines text and visual retrieval streams. The text stream uses OCR and BGE-Large
     embeddings, while the vision stream uses SigLIP and OpenCLIP. Candidate documents are
@@ -82,26 +151,38 @@
   </p>
 
   <h2>Installation</h2>
-  <pre><code>git clone https://github.com/YOUR_USERNAME/invoice-haystack.git
+
+  <pre><code>git clone https://github.com/heethanjan/invoice-haystack.git
 cd invoice-haystack
 pip install -r requirements.txt</code></pre>
 
   <h2>Dataset Access</h2>
+
   <p>
     The dataset will be released after acceptance. For early access or collaboration requests,
-    please submit the request form below.
+    please use the dataset access link below.
   </p>
 
   <p>
-    <a class="button secondary" href="https://forms.gle/YOUR_FORM_ID">Request Access</a>
+    <a class="button secondary" href="https://drive.google.com/file/d/17PvpbvDzoGcYAvSZGrY31OmrMs-LijZ7/view?usp=sharing">
+      Request Access
+    </a>
   </p>
 
   <h2>Citation</h2>
+
   <pre><code>@inproceedings{invoicehaystack2026,
   title={Invoice Haystack: Benchmarking Document Retrieval and Visual Question Answering Under Strong Visual Homogeneity},
   author={Anonymous},
   booktitle={ECCV},
   year={2026}
 }</code></pre>
+
+  <footer>
+    <p>
+      Invoice Haystack project page.
+    </p>
+  </footer>
 </body>
 </html>
+```
