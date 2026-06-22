@@ -28,3 +28,14 @@ We also release VL-RAG, a hybrid retrieval-augmented generation framework that c
 The retrieval pipeline ranks candidate invoices using both visual and textual signals, then applies a VLM filter to verify whether each candidate can answer the query.
 
 
+
+## Dataset Access
+
+The Invoice Haystack benchmark dataset is available upon request for research and evaluation purposes.
+
+To request access, please complete the dataset request form:
+
+**[Request the Invoice Haystack Dataset](https://docs.google.com/forms/d/e/1FAIpQLSeY0rU1eJ6995lp5F5fPGdAJL_cYlcFuWmIUf5nNXYdIPiS4w/viewform?usp=publish-editor)**
+
+After submitting the form, we will review the request and provide access instructions to approved users.
+
