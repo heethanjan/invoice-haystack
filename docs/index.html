@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +42,14 @@
       margin: 24px 0;
       border: 1px solid #ddd;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .abstract {
+      background: #f8f8f8;
+      border-left: 5px solid #111;
+      padding: 18px 22px;
+      border-radius: 6px;
+      margin-top: 28px;
     }
 
     .button {
@@ -132,6 +140,31 @@
     </a>
   </p>
 
+  <h2>Abstract</h2>
+
+  <div class="abstract">
+    <p>
+      Document retrieval and visual question answering systems are increasingly used in
+      enterprise settings where large collections of documents share highly similar layouts,
+      templates, and visual structures. However, existing benchmarks often fail to isolate the
+      challenges posed by strong visual homogeneity, where the correct answer depends on
+      retrieving and reasoning over fine-grained differences between near-identical documents.
+      We introduce <strong>Invoice Haystack</strong>, a benchmark designed to evaluate document
+      retrieval and visual question answering over large collections of visually similar invoice
+      documents. The benchmark contains 1,500 anonymized invoice images and 200 validated
+      question-answer pairs across corpus scales of 500, 1,000, and 1,500 documents.
+    </p>
+
+    <p>
+      To support evaluation, we propose <strong>VL-RAG</strong>, a hybrid retrieval-augmented
+      generation framework that combines OCR-based textual retrieval with visual retrieval using
+      modern vision-language encoders. Candidate documents are ranked using average score fusion
+      and refined using a VLM-based binary verification filter. Invoice Haystack provides a
+      challenging testbed for studying retrieval robustness, multimodal document understanding,
+      and question answering under strong visual similarity.
+    </p>
+  </div>
+
   <h2>Benchmark</h2>
 
   <ul>
@@ -185,4 +218,3 @@ pip install -r requirements.txt</code></pre>
   </footer>
 </body>
 </html>
-```
