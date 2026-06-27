@@ -35,7 +35,7 @@ The Invoice Haystack benchmark dataset is available upon request for research an
 
 To request access, please complete the dataset request form:
 
-**[Request the Invoice Haystack Dataset](https://docs.google.com/forms/d/e/1FAIpQLSeY0rU1eJ6995lp5F5fPGdAJL_cYlcFuWmIUf5nNXYdIPiS4w/viewform?usp=publish-editor)**
+**[Invoice Haystack Dataset](https://huggingface.co/datasets/heetha/invoice-haystack)**
 
 After submitting the form, we will review the request and provide access instructions to approved users.
 
