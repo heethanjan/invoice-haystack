@@ -29,13 +29,10 @@ The retrieval pipeline ranks candidate invoices using both visual and textual si
 
 
 
-## Dataset Access
+## Dataset
 
-The Invoice Haystack benchmark dataset is available upon request for research and evaluation purposes.
-
-To request access, please complete the dataset request form:
 
 **[Invoice Haystack Dataset](https://huggingface.co/datasets/heetha/invoice-haystack)**
 
-After submitting the form, we will review the request and provide access instructions to approved users.
+
 
